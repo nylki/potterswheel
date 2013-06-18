@@ -59,7 +59,6 @@ void createSlice(float z, float radius) {
 
 void draw() {
   background(0);
-  boolean flip = false;
   //print(vertexCount + "\n");
   if (vertexCount < maxvertices-steps-1) {
     z=z+15;
@@ -82,7 +81,7 @@ void draw() {
     lights();
 
     if (record){
-      beginRaw("nervoussystem.obj.OBJExport", "/Users/tom/Desktop/bla.obj"); 
+      beginRaw("nervoussystem.obj.OBJExport", "~/Desktop/bla.obj"); 
     }
     
     translate(width/2, height/1.2, 0);
